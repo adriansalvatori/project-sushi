@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** Actual CSS Code. */
+
+/** Colores
+ * Negro: #151515
+ * Naranja: #F27400
+ */
+
+:root {
+    --dark: #202020; 
+    --black: #151515;
+    --white: #ffffff;
+    --primary: #F27400;
+  } 
+  
+
+html, body {
+    background-color: var(--dark);
+    color: var(--white); 
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 1em; 
+}
+
+.title.is-2 {
+    font-size: 20px;
+}
+
+.title.is-3 {
+    font-size: 16px;
+}
+
+.price {
+    color: var(--primary);
+}
+
+.container {
+    padding: 25px; 
+    display:flex;
+    flex-direction: column;
+}
+
+.container.horizontal {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 20px; 
+    margin: 5px; 
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer; 
+}
+
+.tag:hover, .tag:active, .tag:focus {
+    background-color: var(--primary);
+}
+
+/** Header */
+
+header button{
+    background: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+header .container.busqueda .barra-busqueda {
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 24px;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: calc(100% + 36px);
+}
+
+header .container.busqueda .icon {
+   position: absolute;
+   right: 30px; 
+}
+
+/*** Tags */
+
+.container.tags {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*** Carousel Destacados */
+
+.container.destacados {
+    display: flex;
+    flex-direction: row;
+    width: 150%
+}
+
+.container.destacados .box{
+    width: 200px;
+    background-color: var(--black);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding-bottom: 20px; 
+}
+
+.container.destacados .box img{
+    margin-top: -40px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+
